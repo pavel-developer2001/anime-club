@@ -9,8 +9,6 @@ const ComicsList = () => {
                 <span className="all-items">Все комиксы</span>
             </div>
         <div className="comicsList">
-           
-            
             <ComicsListItem />
             <ComicsListItem />
             <ComicsListItem />
