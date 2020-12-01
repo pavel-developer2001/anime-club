@@ -247,9 +247,11 @@ body {
   display: flex;
 }
 .publish-list-item{
+  
   position: relative;
   padding-left: 12px;
   &__img{
+    cursor: pointer;
     width: 212px;
     height: 220px;
     border-radius: 4px;
@@ -281,5 +283,183 @@ body {
       border-radius: 4px;
       font-size: 10px;
     }
+  }
+}
+.article-list{
+  padding-top: 65px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  /*ArticleListItem*/
+  &-item{
+    background-color: #fff;
+    width: max-content;
+    color: #10121B;
+    display: flex;
+    border-radius:8px;
+    margin-top: 25px;
+    &__img{
+      width: 200px;
+      height: 150px;
+      margin: 15px;
+      border-radius: 8px;
+    }
+    &__content{
+      &-footer{
+        display: flex;
+        justify-content: space-between;
+        &-comments{
+          align-items:center;
+          &-icon{
+            font-size:13px;
+          }
+          &-count{
+            color: $orange;
+            font-size: 13px;
+          }
+        }
+        &-likes{
+          align-items: center;
+          margin-right: 10px;
+          &-count{
+            padding-left:10px;
+            padding-right:10px;
+            font-weight: 500;
+            font-size: 13px;
+            color: #00C491;
+          }
+          &-like{
+            font-size: 13px;
+            cursor: pointer;
+          } 
+        }
+      }
+      &-head{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        &-cat{
+          font-weight: 600;
+          font-size: 15px;
+        }
+        &-author{
+          font-weight: normal;
+          font-size: 15px;
+        }
+        &-date{
+          font-weight: normal;
+          font-size: 15px;
+          color: #484A50;
+        }
+      }
+      &-title{
+        font-weight: normal;
+        font-size: 15px;
+        color: #10121B;
+        width: 275px;
+      }
+      
+      &-tags{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        &-item{
+          cursor: pointer;
+          padding-left:10px;
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  /*ArticleListMain*/
+  &-main{
+    background-color: #fff;
+    color: #10121B;
+    display: flex;
+    border-radius:8px;
+    &__img{
+      width: 390px;
+      height: 340px;
+      margin: 15px;
+      border-radius: 8px;
+    }
+    &__content{
+      &-head{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        &-cat{
+          font-weight: 600;
+          font-size: 15px;
+        }
+        &-author{
+          font-weight: normal;
+          font-size: 15px;
+        }
+        &-date{
+          font-weight: normal;
+          font-size: 15px;
+          color: #484A50;
+        }
+      }
+      &-title{
+        font-weight: normal;
+        font-size: 25px;
+        color: #10121B;
+        width:500px;
+      }
+      &-text{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        width: 495px;
+        font-weight: normal;
+        font-size: 17px;
+        color: #444750;
+      }
+      &-tags{
+        padding-bottom: 20px;
+        &-item{
+          cursor: pointer;
+          padding-left:10px;
+          font-weight: normal;
+          font-size: 15px;
+        }
+      }
+      &-footer{
+        display: flex;
+        justify-content: space-between;
+        &-btn{
+          margin-bottom: 20px;
+        }
+        &-likes{
+          align-items: center;
+          margin-right: 10px;
+          margin-top: 15px;
+          &-count{
+            padding-left:14px;
+            padding-right:14px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #00C491;
+          }
+          &-like{
+            font-size: 14px;
+            cursor: pointer;
+          } 
+        }
+      }
+    }
+  }
+}
+.btn-component{
+  color: $orange;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1.5px solid #EB752B;
+  border-radius: 12px;
+  cursor: pointer;
+  padding:15px;
+  align-items: center;
+  width: 200px;
+  &-icon{
+    font-size: 16px;
+    padding-right: 5px;
   }
 }

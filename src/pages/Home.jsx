@@ -1,7 +1,8 @@
 import React from "react";
+import ArticleList from "../components/ArticleList";
 import CategoryList from "../components/CategoryList";
 import ComicsList from '../components/ComicsList';
-import PublishList from "../components/PablishList";
+import PublishList from "../components/PublishList";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <ComicsList />
             <CategoryList />
             <PublishList />
+            <ArticleList />
         </div>
     );
 };
