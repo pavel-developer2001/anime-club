@@ -20,6 +20,10 @@ body {
   display: block;
   position: relative;
   padding-left: 30%;
+  &-grid{
+    display: flex;
+    padding-bottom: 60px;
+  }
 }
 .logo{
   padding-top: 38px;
@@ -139,6 +143,7 @@ body {
   width: 64%;
   padding: 9px;
   &__text{
+    cursor: pointer;
     color: #10121B;
     font-size: 16px;
     font-weight: 400;
@@ -286,6 +291,11 @@ body {
   }
 }
 .article-list{
+  &-btn{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
   padding-top: 65px;
   padding-bottom: 30px;
   padding-right: 15px;
@@ -298,6 +308,7 @@ body {
     border-radius:8px;
     margin-top: 25px;
     &__img{
+      cursor: pointer;
       width: 200px;
       height: 150px;
       margin: 15px;
@@ -461,5 +472,166 @@ body {
   &-icon{
     font-size: 16px;
     padding-right: 5px;
+  }
+}
+.announce{
+  padding-right: 20px;
+  background: #F2F2F2;
+  border-radius: 6px;
+  color: #10121B;
+  &__head{
+    padding-top:15px;
+    &-title{
+      padding-left: 15px;
+      padding-right: 90px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  &-list{
+    padding-top: 15px;
+   
+    &-item{
+      display: flex;
+      padding-left: 15px;
+      margin-bottom: 15px;
+      &__avatar{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+      }
+      &__content{
+        padding-left: 12px;
+        &-title{
+          font-weight: normal;
+          font-size: 17px;  
+          cursor: pointer;
+        }
+        &-text{
+          font-size: 15px;
+          width: 300px;
+          color: #3C3E47;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        &-date{
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 12px;
+          color: $orange;
+          
+        }
+      }
+  }
+  }
+  
+}
+.all{
+  cursor: pointer;
+  color: $orange;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.question{
+  background: #F2F2F2;
+  border-radius: 6px;
+  color: #10121B;
+  margin-left: 10px;
+  &__head{
+    padding-top:15px;
+    &-title{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      padding-left: 15px;
+      padding-right: 90px;
+    }
+    &-all{
+      padding-right: 25px;
+    }
+  }
+  &-list{
+    &-item{
+      padding-left: 15px;
+      padding-top: 15px;
+      &__title{
+        font-weight: normal;
+        font-size: 17px;
+      }
+      &__answer{
+        padding-top: 8px;
+        display: flex;
+        &-count{
+          font-weight: normal;
+          font-size: 14px;
+          color: #3C3E47
+        }
+        &-answered{
+          padding-left: 10px;
+          align-items: center;
+          cursor: pointer;
+          &-add{
+            color: $orange;
+            font-weight: 500;
+            font-size: 15px;
+            padding-left: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+.footer{
+  text-align: center;
+  background-color: #040507;
+  &__btn{
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  &__info{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &-data{
+      padding-left: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  &__line{
+    width: 519px;
+    height: 1px;
+    border: 1.54925px solid #303341;
+    margin: 0 auto;
+  }
+  &__social{
+    padding-top:20px;
+    &-icon{
+      margin-right: 7px;
+      background-color: #fff;
+      border-radius: 30px;
+      font-size: 15px;
+      padding: 2px;
+      cursor: pointer;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  &__text{
+    font-weight: normal;
+    font-size: 16px;
+    color: #646464;
+    width: 420px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__user{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $orange;
+    font-size: 16px;
+    cursor: pointer;
   }
 }
