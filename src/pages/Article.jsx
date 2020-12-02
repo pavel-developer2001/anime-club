@@ -1,4 +1,5 @@
 import React from "react";
+import Comment from "../components/Comment";
 import Sidebar from "../components/Sidebar";
 
 const Article = () => {
@@ -62,6 +63,7 @@ const Article = () => {
                     </div>
                 </div>
             </div>
+            <Comment />
         </div>
         </>
     )
