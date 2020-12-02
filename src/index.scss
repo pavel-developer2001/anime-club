@@ -912,3 +912,49 @@ body {
     font-weight: 600;
   }
 }
+.more{
+  padding-top: 40px;
+  &__title{
+    font-weight: 600;
+    font-size: 27px;
+    padding-top: 15px;
+  }
+  &-list{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    display: flex;
+    &-item{
+      background-color: #F2F2F2;
+      border-radius: 10px;
+      padding: 15px;
+      width: min-content;
+      margin-right: 15px;
+      cursor: pointer;
+      &__img{
+        width: 195px;
+        height: 155px;
+        border-radius: 6px;
+      }
+      &__cat{
+        display: block;
+        padding-top: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        color: #3C3E47;
+      }
+      &__title{
+        font-weight: 500;
+        font-size: 18px;
+      }
+      &__comment{
+        cursor: pointer;
+        &-title{
+          font-weight: 500;
+          font-size: 16px;
+          color: $orange;
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+}

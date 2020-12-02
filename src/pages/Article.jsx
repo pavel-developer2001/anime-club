@@ -1,6 +1,8 @@
 import React from "react";
 import Comment from "../components/Comment";
+import More from "../components/More";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 const Article = () => {
     return (
@@ -64,6 +66,8 @@ const Article = () => {
                 </div>
             </div>
             <Comment />
+            <More />
+            <Footer />
         </div>
         </>
     )
