@@ -1,5 +1,6 @@
 import React from 'react';
 import ComicsListItem from './ComicsListItem';
+import Carousel from 'react-elastic-carousel'
 
 const ComicsList = () => {
     return (
@@ -9,10 +10,15 @@ const ComicsList = () => {
                 <span className="all-items">Все комиксы</span>
             </div>
         <div className="comicsList">
-            <ComicsListItem />
-            <ComicsListItem />
-            <ComicsListItem />
-            <ComicsListItem />
+            <Carousel itemsToShow={4}>
+                <ComicsListItem />
+                <ComicsListItem />
+                <ComicsListItem />
+                <ComicsListItem />
+                <ComicsListItem />
+                <ComicsListItem />
+            </Carousel>
+
         </div>
         </>
     );

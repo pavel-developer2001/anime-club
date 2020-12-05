@@ -8,7 +8,7 @@ const Announce = () => {
                 <span className="announce__head-title">Свежие объявления 🔥</span>
                 <span className="announce__head-all all">Смотреть больше</span>
             </div>
-            <AnnounceList />
+            <AnnounceList/>
         </div>
     );
 };
