@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
     return (
@@ -11,11 +12,13 @@ const Sidebar = () => {
 
             </div>
             <div className="search">
+            <Link to="/search">
                 <svg className="search__icon" width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.4167 23.9167C9.15744 23.9167 4.08333 18.8426 4.08333 12.5833C4.08333 6.32411 9.15744 1.25 15.4167 1.25C21.6759 1.25 26.75 6.32411 26.75 12.5833C26.75 18.8426 21.6759 23.9167 15.4167 23.9167Z" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.24998 26.7499L7.41248 20.5874" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.4167 23.9167C9.15744 23.9167 4.08333 18.8426 4.08333 12.5833C4.08333 6.32411 9.15744 1.25 15.4167 1.25C21.6759 1.25 26.75 6.32411 26.75 12.5833C26.75 18.8426 21.6759 23.9167 15.4167 23.9167Z" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1.24998 26.7499L7.41248 20.5874" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <span className="search__text">Поиск</span>
+            </Link>
             </div>
             <div className="select">
             <select>
@@ -26,24 +29,24 @@ const Sidebar = () => {
             <div className="menu">
                 <div className="menu__item">
                     <svg className="menu__item-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <span className="menu__item-text">Публикации</span>
                     <span className="menu__item-count">284</span>
                 </div>
                 <div className="menu__item">
                     <svg className="menu__item-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <span className="menu__item-text">Мероприятия</span>
                     <span className="menu__item-count">284</span>
                 </div>
                 <div className="menu__item">
                     <svg className="menu__item-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 20.9165L11 1.08317" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M1.08337 11H20.9167" stroke="#F2F2F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <span className="menu__item-text">Объявления</span>
                     <span className="menu__item-count">284</span>
@@ -53,21 +56,21 @@ const Sidebar = () => {
                 Ответы
             </div>
             <div className="person">
-                <img className="person__avatar" src="http://ex-news.com/wp-content/uploads/2018/10/Depositphotos_57216693_xl-2015-1.jpg"/>
+                <img alt="logo" className="person__avatar" src="http://ex-news.com/wp-content/uploads/2018/10/Depositphotos_57216693_xl-2015-1.jpg"/>
                 <div className="person__info">
-                    <h7 className="person__name">Мой профиль</h7>
+                    <h6 className="person__name">Мой профиль</h6>
                     <span className="person__exit">Выйти с аккаунта</span>
                 </div>
                 <svg className="person__notifications" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 7C16 5.4087 15.3679 3.88258 14.2426 2.75736C13.1174 1.63214 11.5913 1 10 1C8.4087 1 6.88258 1.63214 5.75736 2.75736C4.63214 3.88258 4 5.4087 4 7C4 14 1 16 1 16H19C19 16 16 14 16 7Z" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 20C11.7968 20.3042 11.505 20.5566 11.154 20.7321C10.803 20.9076 10.4051 21 10 21C9.59494 21 9.19698 20.9076 8.84598 20.7321C8.49498 20.5566 8.20325 20.3042 8 20" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 7C16 5.4087 15.3679 3.88258 14.2426 2.75736C13.1174 1.63214 11.5913 1 10 1C8.4087 1 6.88258 1.63214 5.75736 2.75736C4.63214 3.88258 4 5.4087 4 7C4 14 1 16 1 16H19C19 16 16 14 16 7Z" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 20C11.7968 20.3042 11.505 20.5566 11.154 20.7321C10.803 20.9076 10.4051 21 10 21C9.59494 21 9.19698 20.9076 8.84598 20.7321C8.49498 20.5566 8.20325 20.3042 8 20" stroke="#F2F2F2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
             <div className="add-ad">
                 <svg className="add-ad__icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.5 21C17.0228 21 21.5 16.5228 21.5 11C21.5 5.47715 17.0228 1 11.5 1C5.97715 1 1.5 5.47715 1.5 11C1.5 16.5228 5.97715 21 11.5 21Z" stroke="#10121B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.5 7V15" stroke="#10121B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7.5 11H15.5" stroke="#10121B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 21C17.0228 21 21.5 16.5228 21.5 11C21.5 5.47715 17.0228 1 11.5 1C5.97715 1 1.5 5.47715 1.5 11C1.5 16.5228 5.97715 21 11.5 21Z" stroke="#10121B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M11.5 7V15" stroke="#10121B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M7.5 11H15.5" stroke="#10121B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <span className="add-ad__text">Разместить объявление</span>    
             </div>

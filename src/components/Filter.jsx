@@ -52,10 +52,10 @@ const Filter = () => {
                 <span className="filter__cat-name">Публикации</span>
                 <span className="filter__cat-count">(2)</span>
                 {!active &&<svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L7 7L13 1" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
                 {active && <svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 7L7 1L13 7" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 7L7 1L13 7" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
 
                 {active &&<Params />}
@@ -65,10 +65,10 @@ const Filter = () => {
                 <span className="filter__cat-name">Мероприятия</span>
                 <span className="filter__cat-count">(2)</span>
                 {!active &&<svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L7 7L13 1" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
                 {active && <svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 7L7 1L13 7" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 7L7 1L13 7" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
 
                 {active &&<Params />}
@@ -78,10 +78,10 @@ const Filter = () => {
                 <span className="filter__cat-name">Заведения</span>
                 <span className="filter__cat-count">(2)</span>
                 {!active &&<svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L13 1" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L7 7L13 1" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
                 {active && <svg onClick={() => setActive(!active)} className="filter__cat-icon" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 7L7 1L13 7" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 7L7 1L13 7" stroke="#EB752B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>}
 
                 {active &&<Params />}

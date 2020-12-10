@@ -10,6 +10,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .sidebar{
   position: fixed;
   padding-left: 20px;
@@ -170,11 +173,11 @@ body {
   }
 }
 .logo{
-  padding-top: 38px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   &__text{
-    padding-left: 50px;
+    padding-left: 10px;
     font-size: 30px;  
     text-transform: uppercase;
   }
@@ -248,12 +251,13 @@ body {
 .person{
   align-items:center;
   display: flex;
-  padding-top: 75px;
+  padding-top: 45px;
   &__avatar{
     cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 35px;
+    margin-top: 13%;
   }
   &__info{
     display: block;
@@ -264,6 +268,7 @@ body {
     display: block;
     font-size: 18px;
     cursor: pointer;
+    margin-bottom: 0;
   }
   &__exit{
     color: $orange;
@@ -275,9 +280,11 @@ body {
     border: 1.5px solid #191D24;
     border-radius: 6px;
     padding: 10px;
+    margin-top: 13%;
   }
 }
 .add-ad{
+  display: flex;
   margin-bottom: 20px;
   margin-top: 20px;
   background-color: $orange;
@@ -290,7 +297,7 @@ body {
     cursor: pointer;
     color: #10121B;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
   }
 }
@@ -332,6 +339,9 @@ body {
   &__cover{
     position: relative;
     &-cat{
+      padding: 2px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       top: 165px;
       left: 15px;
@@ -340,9 +350,12 @@ body {
       font-size:15px;
     }
     &-rating{
+      padding: 2px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       top: 180px;
-      right: 45px;
+      right: 7%;
       color:$orange;
       font-weight: 600;
       font-size:15px;
