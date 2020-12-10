@@ -1,6 +1,8 @@
 import React from "react";
+import Filter from "../components/Filter";
 
 const Search = () => {
+    const [active, setActive] = React.useState(false)
     return (
         <div className="search">
             <div className="search__back">
@@ -11,12 +13,13 @@ const Search = () => {
             </div>
             <div className="search__content">
                 <div className="search__content-head">
-                    <svg  className="search__content-head-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="search__content-head-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 17C6.58172 17 3 13.4183 3 9C3 4.58172 6.58172 1 11 1C15.4183 1 19 4.58172 19 9C19 13.4183 15.4183 17 11 17Z" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1.0001 18.9999L5.3501 14.6499" stroke="#EB752B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <input type="text" placeholder="Поиск" className="search__content-head-input" />
-                    <svg className="search__content-head-input-icon"  width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    {!active && <svg onClick={() => setActive(!active)} className="search__content-head-input-icon"  width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 19V12" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M4 8V1" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12 19V10" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -26,7 +29,13 @@ const Search = () => {
                     <path d="M1 12H7" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M9 6H15" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M17 14H23" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    </svg>}
+
+                    {active && <svg onClick={() => setActive(!active)} className="search__content-head-input-icon" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 19L1 1" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.999999 19L17 1" stroke="#EB752B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>}
+
                 </div>
                 <div className="search__content-tags">
                     <div className="search__content-tags-tag">
@@ -40,8 +49,9 @@ const Search = () => {
                     </div>
                     <span className="search__content-tags-tag-count">+ 105</span>
                 </div>
+                {active && <Filter />}
             </div>
         </div>
-    )
-}
+    );
+};
 export default Search;
